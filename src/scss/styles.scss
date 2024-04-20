@@ -1,0 +1,92 @@
+@import "bootstrap/scss/bootstrap";
+
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-family: "Exo 2", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #2e2e2e;
+	color: #88dfff;
+}
+
+header {
+	background-color: #88dfff;
+	padding: 15px;
+
+	h1 {
+		color: #2e2e2e;
+		font-weight: 600;
+	}
+}
+
+.wrapper {
+	margin-top: 50px;
+	width: 80%;
+	border: 3px solid #88dfff;
+	border-radius: 15px;
+	padding: 25px;
+
+	h2 {
+		font-weight: 600;
+	}
+
+	input[type="text"] {
+		border: 3px solid #88dfff;
+		background-color: transparent;
+		color: #88dfff;
+		padding: 10px;
+	}
+
+	input[type="date"] {
+		border: 3px solid #88dfff;
+		background-color: transparent;
+		color: #88dfff;
+		padding: 10px;
+	}
+
+	input[type="date"]::-webkit-calendar-picker-indicator {
+		color: transparent;
+		background-color: transparent;
+		background-image: url("../../calendar-days-solid.svg"); /* Custom icon */
+		background-size: contain;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+
+	.btn-submit {
+		border: none;
+		padding: 10px;
+		background-color: #88dfff;
+		color: #2e2e2e;
+		font-weight: 600;
+		border-radius: 10px;
+	}
+}
+
+.container {
+	margin-top: 50px;
+	width: 90%;
+
+	.list-item {
+		margin-top: 20px;
+		border: 3px solid #88dfff;
+		border-radius: 15px;
+		padding: 10px 25px 10px 25px;
+
+		.selected {
+			display: none;
+		}
+
+		.action-btn {
+			background-color: transparent;
+			border: none;
+		}
+	}
+}
